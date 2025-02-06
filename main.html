@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Youtube Clone</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="toggle-logo">
+          <button class="btn" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <img src="img/logo.PNG" id="y-logo">
+        </div>
+        <div class="search-bar-btn-mic">
+          <div class="search-bar-btn">
+            <input type="text"  id="search-bar" placeholder="Search">
+            <button id="search-btn"><img src="img/search.PNG"></button>
+          </div>
+          <button id="mic">
+            <i class="fa-solid fa-microphone fa-xl" style="color: #000000;"></i>
+          </button>
+        </div>
+        <div class="ceate-bell-pp">
+          <button id="create">
+            <i class="fa-solid fa-plus fa-xl" style="color: #1e3050;"></i> 
+            <p>Create</p>
+          </button>
+          <button id="bell" class="btn"><img src="img/bell.PNG"></button>
+          <button id="pp"><img src="img/profile-pic.png"></button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <aside class="sidebar">
+        <button id="home" class="sidebar-btn">
+          <i class="fa-solid fa-house fa-xl" style="color: #1e3050;"></i>
+          <p>Home</p>
+        </button>
+        <button id="shorts" class="sidebar-btn">
+          <i class="fa-brands fa-youtube fa-xl" style="color: #000000;"></i>
+          <p>Shorts</p>
+        </button>
+        <button id="sub" class="sidebar-btn">
+          <img src="img/subscription.PNG">
+          <p>Subcription</p>
+        </button>
+        <button id="you" class="sidebar-btn">
+          <i class="fa-solid fa-circle-user fa-xl" style="color: #000000;"></i>
+          <p>You</p>
+        </button>
+        <div class="toggle-sidebar">
+          <button id="history"><i class="fa-solid fa-clock-rotate-left fa-xl" style="color: #1e3050;"></i>History</button>
+          <button id="playlists"><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i>Playlists</button>
+          <button id="your-videos"><i class="fa-solid fa-play fa-xl" style="color: #000000;"></i>Your Videos</button>
+          <button id="watch-later"><i class="fa-regular fa-clock fa-xl" style="color: #000000;"></i>Watch Later</button>
+          <button id="liked-videos"><i class="fa-regular fa-thumbs-up fa-xl" style="color: #000000;"></i>Liked Videos</button>
+          <hr>
+          <h1>Subcriptions</h1>
+          <button id="XYZ"><i class="fa-solid fa-user fa-xl" style="color: #000000;"></i>XYZ</button>
+          <hr>
+          <h1>Explore</h1>
+          <button id="trending"><i class="fa-solid fa-fire fa-xl" style="color: #000000;"></i>Trending</button>
+          <button id="shopping"><i class="fa-solid fa-bag-shopping fa-xl" style="color: #000000;"></i>Shopping</button>
+          <button id="music"><i class="fa-solid fa-music fa-xl" style="color: #000000;"></i>Music</button>
+          <button id="films"><i class="fa-solid fa-video" style="color: #000000;"></i>Films</button>
+          <button id="live"><i class="fa-solid fa-headset fa-xl" style="color: #000000;"></i>Live</button>
+          <button id="gaming"><i class="fa-solid fa-gamepad fa-xl" style="color: #000000;"></i>Gaming</button>
+          <button id="news"><i class="fa-regular fa-newspaper fa-xl" style="color: #1e3050;"></i>News</button>
+          <button id="sport"><i class="fa-solid fa-trophy fa-xl" style="color: #1e3050;"></i>Sport</button>
+          <button id="courses"><i class="fa-solid fa-graduation-cap fa-xl" style="color: #000000;"></i>Courses</button>
+          <button id="fashion-beauty"><i class="fa-solid fa-shirt fa-xl" style="color: #000000;"></i>Fashion & Beauty</button>
+          <button id="podcasts"><i class="fa-solid fa-signal fa-xl" style="color: #000000;"></i>Podcasts</button>
+          <hr>
+          <h1>More From YouTube</h1>
+          <button id="premium"><i class="fa-brands fa-youtube fa-xl" style="color: #fb0909;"></i>YouTube Premium</button>
+          <button id="studio"><i class="fa-brands fa-youtube fa-xl" style="color: #fb0909;"></i>YouTube Studio</button>
+          <button id="music"><i class="fa-brands fa-youtube fa-xl" style="color: #fb0909;"></i>YouTube Music</button>
+          <button id="kids"><i class="fa-brands fa-youtube fa-xl" style="color: #fb0909;"></i>YouTube Kids</button>
+          <hr>
+          <button id="settings"><i class="fa-solid fa-gear fa-xl" style="color: #000000;"></i>Settings</button>
+          <button id="report-history"><i class="fa-regular fa-flag fa-xl" style="color: #000000;"></i>Report History</button>
+          <button id="help"><i class="fa-solid fa-question fa-xl" style="color: #000000;"></i>Help</button>
+          <button id="feedback"><i class="fa-regular fa-message fa-xl" style="color: #000000;"></i>Send Feedback</button>
+          <hr>
+          <p>
+            About Press Copyright<br>Contact us Creator Advertise<br>Developers
+          </p>
+          <p>Terms Privacy Policy & Safety<br>How YouTube works<br>Test new features</p>
+        </div>
+      </aside>
+      <section class="filter-btn">
+        <button id="all">All</button>
+        <button id="gaming">Gaming</button>
+        <button id="music">Music</button>
+        <button id="mods">Mods</button>
+        <button id="audio">Audio Commentaries</button>
+        <button id="minecraft">Minecraft</button>
+        <button id="ark">ARK:Evolved Survival</button>
+        <button id="sci-fi">Science Fiction</button>
+        <button id="drama">Drama</button>
+        <button id="cooking">Gordan Ramsay</button>
+        <button id="news">News</button>
+        <button id="card">Card Manipulation</button>
+      </section>
+      <section class="video-container">
+
+      </section>
+    </main>
+    <script src="./main.js" type="module">
+    </script>
+  </body>
+</html>
